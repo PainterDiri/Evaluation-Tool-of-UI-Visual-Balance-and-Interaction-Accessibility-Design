@@ -1,0 +1,30 @@
+[
+  {
+    "id": "VB-01",
+    "title": "视觉重心接近几何中心",
+    "metric": "physical_balance",
+    "description": "界面视觉重心应接近屏幕几何中心，避免明显头重脚轻或左右失衡。",
+    "target": ">= 0.80"
+  },
+  {
+    "id": "AC-01",
+    "title": "核心 CTA 位于拇指热区",
+    "metric": "interaction_accessibility",
+    "description": "核心高频操作应优先布局在屏幕中下部热区，缩短拇指移动距离。",
+    "target": "weighted_id <= 1.8"
+  },
+  {
+    "id": "AC-02",
+    "title": "关键交互目标大小充足",
+    "metric": "target_size",
+    "description": "关键触控目标高度建议 44-56dp，减少误触与操作失败。",
+    "target": "min target size >= 44dp"
+  },
+  {
+    "id": "AC-03",
+    "title": "语义优先级与可达性一致",
+    "metric": "semantic_accessibility",
+    "description": "高语义权重元素不应长期处于高交互成本区域。",
+    "target": "high alpha elements should have low fitts ID"
+  }
+]
